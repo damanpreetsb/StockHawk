@@ -11,6 +11,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
 import com.sam_chordas.android.stockhawk.R;
+import com.sam_chordas.android.stockhawk.fragment.FirstFragment;
+import com.sam_chordas.android.stockhawk.fragment.SecondFragment;
+import com.sam_chordas.android.stockhawk.fragment.ThirdFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,29 +23,35 @@ public class StockDetailsActivity extends AppCompatActivity {
     private Toolbar toolbar;
     private TabLayout tabLayout;
     private ViewPager viewPager;
+    Bundle symbol;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stock_details);
 
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+//        toolbar = (Toolbar) findViewById(R.id.toolbar);
+//        setSupportActionBar(toolbar);
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        viewPager = (ViewPager) findViewById(R.id.container);
+        viewPager = (ViewPager) findViewById(R.id.viewpager);
         setupViewPager(viewPager);
 
         tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
+
+        String s = getIntent().getStringExtra(getResources().getString(R.string.symbol_label));
+
+        symbol = new Bundle();
+        symbol.putString(getString(R.string.symbol_bundle),s);
     }
 
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new OneFragment(), "ONE");
-        adapter.addFragment(new TwoFragment(), "TWO");
-        adapter.addFragment(new ThreeFragment(), "THREE");
+        adapter.addFragment(new FirstFragment(), "ONE");
+        adapter.addFragment(new SecondFragment(), "TWO");
+        adapter.addFragment(new ThirdFragment(), "THREE");
         viewPager.setAdapter(adapter);
     }
 
@@ -56,7 +65,20 @@ public class StockDetailsActivity extends AppCompatActivity {
 
         @Override
         public Fragment getItem(int position) {
-            return mFragmentList.get(position);
+            switch (position){
+                case 0:
+                    FirstFragment f1 = new FirstFragment();
+                    f1.setArguments(symbol);
+                    return f1;
+                case 1:
+                    SecondFragment f2 = new SecondFragment();
+                    return f2;
+                case 2:
+                    ThirdFragment f3 = new ThirdFragment();
+                    return f3;
+                default:
+                    return null;
+            }
         }
 
         @Override
