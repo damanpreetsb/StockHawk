@@ -72,9 +72,11 @@ public class StockDetailsActivity extends AppCompatActivity {
                     return f1;
                 case 1:
                     SecondFragment f2 = new SecondFragment();
+                    f2.setArguments(symbol);
                     return f2;
                 case 2:
                     ThirdFragment f3 = new ThirdFragment();
+                    f3.setArguments(symbol);
                     return f3;
                 default:
                     return null;

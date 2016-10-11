@@ -49,11 +49,11 @@ public class FirstFragment extends Fragment {
         stock = symbol.getString(getResources().getString(R.string.symbol_bundle));
 
         name = (TextView) rootView.findViewById(R.id.name);
-        Data();
+        data();
         return rootView;
     }
 
-    public void Data() {
+    public void data() {
         try {
             final String BASE_URL = "http://empyrean-aurora-455.appspot.com/service.php?quote=yes&symbol=";
 
