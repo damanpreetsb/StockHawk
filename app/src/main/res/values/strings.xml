@@ -10,4 +10,6 @@
     <string name="input_hint">FB</string>
     <string name="input_prefill"></string>
     <string name="network_toast">Uh-oh! This app requires an internet connection</string>
+    <string name="title_activity_stock_details">StockDetailsActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
 </resources>

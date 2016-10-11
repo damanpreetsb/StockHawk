@@ -84,7 +84,7 @@ public class MyStocksActivity extends AppCompatActivity implements LoaderManager
     recyclerView.addOnItemTouchListener(new RecyclerViewItemClickListener(this,
             new RecyclerViewItemClickListener.OnItemClickListener() {
               @Override public void onItemClick(View v, int position) {
-                Intent intent = new Intent(MyStocksActivity.this, DetailsActivity.class);
+                Intent intent = new Intent(MyStocksActivity.this, StockDetailsActivity.class);
                 startActivity(intent);
               }
             }));
