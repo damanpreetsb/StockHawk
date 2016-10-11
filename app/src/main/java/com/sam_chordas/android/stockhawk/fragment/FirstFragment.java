@@ -29,8 +29,8 @@ import java.util.Map;
  * A simple {@link Fragment} subclass.
  */
 public class FirstFragment extends Fragment {
-    TextView name;
-    String stock;
+    private TextView name;
+    private String stock;
 
 
     public FirstFragment() {
