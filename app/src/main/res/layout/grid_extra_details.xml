@@ -1,0 +1,114 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="2">
+
+    <Space
+        android:layout_height="50dp"
+        android:layout_columnSpan="2"/>
+
+    <TextView
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_columnWeight="1"
+        android:gravity="left"
+        android:layout_gravity="fill_horizontal"
+        android:textSize="26sp"
+        android:text="Name"
+        android:fontFamily="sans-serif"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_columnWeight="1"
+        android:gravity="left"
+        android:layout_gravity="fill_horizontal"
+        android:textSize="26sp"
+        android:textColor="@android:color/background_light"
+        android:text="Facebook"
+        android:fontFamily="sans-serif"/>
+
+    <TextView
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_columnWeight="1"
+        android:gravity="left"
+        android:layout_gravity="fill_horizontal"
+        android:textSize="26sp"
+        android:text="High"
+        android:fontFamily="sans-serif"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:id="@+id/high"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_columnWeight="1"
+        android:gravity="left"
+        android:layout_gravity="fill_horizontal"
+        android:textSize="26sp"
+        android:textColor="@android:color/background_light"
+        android:text="623"
+        android:fontFamily="sans-serif"/>
+
+    <TextView
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_columnWeight="1"
+        android:gravity="left"
+        android:layout_gravity="fill_horizontal"
+        android:textSize="26sp"
+        android:text="Low"
+        android:fontFamily="sans-serif"/>
+
+    <TextView
+        android:id="@+id/low"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_columnWeight="1"
+        android:gravity="left"
+        android:layout_gravity="fill_horizontal"
+        android:textColor="@android:color/background_light"
+        android:textSize="26sp"
+        android:text="264"
+        android:fontFamily="sans-serif"/>
+
+    <TextView
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_width="0dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_height="40dp"
+        android:layout_columnWeight="1"
+        android:gravity="left"
+        android:layout_gravity="fill_horizontal"
+        android:textSize="26sp"
+        android:text="Open"
+        android:fontFamily="sans-serif"/>
+
+    <TextView
+        android:id="@+id/open"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_columnWeight="1"
+        android:textColor="@android:color/background_light"
+        android:gravity="left"
+        android:layout_gravity="fill_horizontal"
+        android:textSize="26sp"
+        android:text="26%"
+        android:fontFamily="sans-serif"/>
+
+    <Space
+        android:layout_height="50dp"
+        android:layout_columnSpan="2"/>
+
+</GridLayout>

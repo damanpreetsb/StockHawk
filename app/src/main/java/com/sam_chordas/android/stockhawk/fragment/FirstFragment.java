@@ -29,7 +29,7 @@ import java.util.Map;
  * A simple {@link Fragment} subclass.
  */
 public class FirstFragment extends Fragment {
-    private TextView name;
+    private TextView name, lastprice, change, changepercent, high, low, open;
     private String stock;
 
 
@@ -49,6 +49,12 @@ public class FirstFragment extends Fragment {
         stock = symbol.getString(getResources().getString(R.string.symbol_bundle));
 
         name = (TextView) rootView.findViewById(R.id.name);
+        high = (TextView) rootView.findViewById(R.id.high);
+        low = (TextView) rootView.findViewById(R.id.low);
+        open = (TextView) rootView.findViewById(R.id.open);
+        lastprice = (TextView) rootView.findViewById(R.id.lastprice);
+        change = (TextView) rootView.findViewById(R.id.change_value);
+        changepercent = (TextView) rootView.findViewById(R.id.change_percent);
         data();
         return rootView;
     }
@@ -66,6 +72,13 @@ public class FirstFragment extends Fragment {
                             try {
                                 JSONObject obj = new JSONObject(response);
                                 name.setText(obj.getString("Name"));
+                                lastprice.setText(obj.getString("LastPrice"));
+                                change.setText(obj.getString("Change"));
+                                String s = obj.getString("ChangePercent")+"%" ;
+                                changepercent.setText(s);
+                                high.setText(obj.getString("High"));
+                                low.setText(obj.getString("Low"));
+                                open.setText(obj.getString("Open"));
                             } catch (JSONException e) {
                                 e.printStackTrace();
                             }

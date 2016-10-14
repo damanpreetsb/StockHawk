@@ -46,7 +46,8 @@
         <activity android:name=".ui.DetailsActivity" />
         <activity
             android:name=".ui.StockDetailsActivity"
-            android:label="@string/title_activity_stock_details"></activity>
+            android:label="@string/title_activity_stock_details">
+        </activity>
     </application>
 
 </manifest>

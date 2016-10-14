@@ -1,0 +1,52 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/background_light"
+    android:columnCount="2">
+
+    <Space
+        android:layout_height="50dp"
+        android:layout_columnSpan="2"/>
+
+    <TextView
+        android:id="@+id/lastprice"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_columnWeight="2"
+        android:layout_rowSpan="2"
+        android:gravity="center"
+        android:layout_gravity="fill_horizontal"
+        android:textSize="62sp"
+        android:textColor="@android:color/background_dark"
+        android:text="$50"
+        android:fontFamily="sans-serif-condensed"  />
+
+    <TextView
+        android:id="@+id/change_value"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_columnWeight="1"
+        android:gravity="left"
+        android:layout_gravity="fill_horizontal"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="42sp"
+        android:text="22"
+        android:fontFamily="sans-serif" />
+
+    <TextView
+        android:id="@+id/change_percent"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_columnWeight="1"
+        android:gravity="left"
+        android:layout_gravity="fill_horizontal"
+        android:textSize="34sp"
+        android:textColor="@android:color/darker_gray"
+        android:text="20%"
+        android:fontFamily="sans-serif-medium"/>
+
+    <Space
+        android:layout_height="50dp"
+        android:layout_columnSpan="2"/>
+
+</GridLayout>
