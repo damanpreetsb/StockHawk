@@ -12,6 +12,7 @@ import android.util.Log;
 import com.google.android.gms.gcm.GcmNetworkManager;
 import com.google.android.gms.gcm.GcmTaskService;
 import com.google.android.gms.gcm.TaskParams;
+import com.sam_chordas.android.stockhawk.R;
 import com.sam_chordas.android.stockhawk.data.QuoteColumns;
 import com.sam_chordas.android.stockhawk.data.QuoteProvider;
 import com.sam_chordas.android.stockhawk.rest.Utils;
@@ -129,7 +130,7 @@ public class StockTaskService extends GcmTaskService{
               Utils.quoteJsonToContentVals(getResponse));
           updateWidget();
         }catch (RemoteException | OperationApplicationException e){
-          Log.e(LOG_TAG, "Error applying batch insert", e);
+          Log.e(LOG_TAG, getResources().getString(R.string.error_batch), e);
         }
       } catch (IOException e){
         e.printStackTrace();

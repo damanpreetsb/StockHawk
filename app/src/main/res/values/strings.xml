@@ -24,4 +24,12 @@
 
     <string name="symbol_label" translatable="false">symbol</string>
     <string name="symbol_bundle" translatable="false">symb</string>
+
+    <string name="details" translatable="true">DETAILS</string>
+    <string name="charts" translatable="true">CHARTS</string>
+    <string name="news" translatable="true">NEWS</string>
+
+    <string name="stock_intent_service" translatable="true">Stock Intent Service</string>
+    <string name="error_batch" translatable="true">Error applying batch insert</string>
+    <string name="setBackgroundResource" translatable="false">setBackgroundResource</string>
 </resources>

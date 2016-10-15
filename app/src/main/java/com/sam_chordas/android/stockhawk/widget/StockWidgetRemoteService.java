@@ -79,9 +79,9 @@ public class StockWidgetRemoteService extends RemoteViewsService {
                 views.setTextViewText(R.id.stock_symbol, symbols);
                 views.setTextViewText(R.id.bid_price, bidPrice);
                 if (isUp == 1) {
-                    views.setInt(R.id.change, "setBackgroundResource", R.drawable.percent_change_pill_green);
+                    views.setInt(R.id.change, getResources().getString(R.string.setBackgroundResource), R.drawable.percent_change_pill_green);
                 } else {
-                    views.setInt(R.id.change, "setBackgroundResource", R.drawable.percent_change_pill_red);
+                    views.setInt(R.id.change, getResources().getString(R.string.setBackgroundResource), R.drawable.percent_change_pill_red);
                 }
                 views.setTextViewText(R.id.change, data.getString(INDEX_PERCENT_CHANGE));
                 Intent intent = new Intent(getApplicationContext(), StockDetailsActivity.class);
