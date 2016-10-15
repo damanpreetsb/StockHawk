@@ -38,5 +38,6 @@ dependencies {
     compile 'com.android.support:support-v13:24.2.1'
     compile 'com.android.support:support-v4:24.2.1'
     compile 'com.android.support:cardview-v7:24.2.1'
+    compile 'com.android.support:gridlayout-v7:24.2.1'
     apt 'net.simonvt.schematic:schematic-compiler:0.6.3'
 }

@@ -51,9 +51,9 @@ public class StockDetailsActivity extends AppCompatActivity {
 
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new FirstFragment(), "ONE");
-        adapter.addFragment(new SecondFragment(), "TWO");
-        adapter.addFragment(new ThirdFragment(), "THREE");
+        adapter.addFragment(new FirstFragment(), "DETAILS");
+        adapter.addFragment(new SecondFragment(), "CHART");
+        adapter.addFragment(new ThirdFragment(), "NEWS");
         viewPager.setAdapter(adapter);
     }
 
