@@ -12,6 +12,9 @@
     <string name="network_toast" translatable="true">Uh-oh! This app requires an internet connection</string>
     <string name="title_activity_stock_details" translatable="true">StockDetailsActivity</string>
     <string name="section_format" translatable="true">Hello World from section: %1$d</string>
+    <string name="error_stock_not_found" translatable="true">No Stock found by this name.</string>
+    <string name="error_stock_already_saved" translatable="true">This stock is already saved!</string>
+    <string name="empty_message" translatable="true">No Data is Available</string>
 
     <string name="symbol_label" translatable="false">symbol</string>
     <string name="symbol_bundle" translatable="false">symb</string>
