@@ -1,19 +1,18 @@
 <resources>
-    <string name="app_name">Stock Hawk</string>
+    <string name="app_name" translatable="true">Stock Hawk</string>
 
-    <string name="action_example">Example action</string>
+    <string name="action_example" translatable="true">Example action</string>
 
-    <string name="action_settings">Settings</string>
-    <string name="action_change_units">Change Units</string>
-    <string name="symbol_search">Symbol Search</string>
-    <string name="content_test">Search for a Stock Symbol</string>
-    <string name="input_hint">FB</string>
-    <string name="input_prefill"></string>
-    <string name="network_toast">Uh-oh! This app requires an internet connection</string>
-    <string name="title_activity_stock_details">StockDetailsActivity</string>
-    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="action_settings" translatable="true">Settings</string>
+    <string name="action_change_units" translatable="true">Change Units</string>
+    <string name="symbol_search" translatable="true">Symbol Search</string>
+    <string name="content_test" translatable="true">Search for a Stock Symbol</string>
+    <string name="input_hint" translatable="true">FB</string>
+    <string name="input_prefill" translatable="true"></string>
+    <string name="network_toast" translatable="true">Uh-oh! This app requires an internet connection</string>
+    <string name="title_activity_stock_details" translatable="true">StockDetailsActivity</string>
+    <string name="section_format" translatable="true">Hello World from section: %1$d</string>
 
     <string name="symbol_label" translatable="false">symbol</string>
     <string name="symbol_bundle" translatable="false">symb</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -2,11 +2,13 @@ package com.sam_chordas.android.stockhawk.service;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.content.Intent;
 import android.content.OperationApplicationException;
 import android.database.Cursor;
 import android.database.DatabaseUtils;
 import android.os.RemoteException;
 import android.util.Log;
+
 import com.google.android.gms.gcm.GcmNetworkManager;
 import com.google.android.gms.gcm.GcmTaskService;
 import com.google.android.gms.gcm.TaskParams;
@@ -16,6 +18,7 @@ import com.sam_chordas.android.stockhawk.rest.Utils;
 import com.squareup.okhttp.OkHttpClient;
 import com.squareup.okhttp.Request;
 import com.squareup.okhttp.Response;
+
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
@@ -27,6 +30,7 @@ import java.net.URLEncoder;
  */
 public class StockTaskService extends GcmTaskService{
   private String LOG_TAG = StockTaskService.class.getSimpleName();
+  public static final String ACTION_DATA_UPDATED = "com.sam_chordas.android.stockhawk.DATA_UPDATED";
 
   private OkHttpClient client = new OkHttpClient();
   private Context mContext;
@@ -123,6 +127,7 @@ public class StockTaskService extends GcmTaskService{
           }
           mContext.getContentResolver().applyBatch(QuoteProvider.AUTHORITY,
               Utils.quoteJsonToContentVals(getResponse));
+          updateWidget();
         }catch (RemoteException | OperationApplicationException e){
           Log.e(LOG_TAG, "Error applying batch insert", e);
         }
@@ -132,6 +137,12 @@ public class StockTaskService extends GcmTaskService{
     }
 
     return result;
+  }
+
+  private void updateWidget() {
+    Intent updatedDataIntent = new Intent(ACTION_DATA_UPDATED);
+    updatedDataIntent.setPackage(mContext.getPackageName());
+    mContext.sendBroadcast(updatedDataIntent);
   }
 
 }
