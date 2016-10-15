@@ -35,7 +35,6 @@ public class SecondFragment extends Fragment {
         webView = (WebView) rootView.findViewById(R.id.web_chart);
         webView.getSettings().setJavaScriptEnabled(true);
         String s = "http://empyrean-aurora-455.appspot.com/charts.php?symbol="+stock;
-        System.out.println(s);
         webView.loadUrl(s);
         return rootView;
     }
