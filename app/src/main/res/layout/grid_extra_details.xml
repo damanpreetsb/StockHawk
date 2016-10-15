@@ -9,14 +9,15 @@
 
     <TextView
         android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
         android:layout_marginTop="@dimen/activity_vertical_margin"
         android:layout_width="0dp"
         android:layout_height="40dp"
         android:layout_columnWeight="1"
-        android:gravity="left"
+        android:gravity="start"
         android:layout_gravity="fill_horizontal"
         android:textSize="26sp"
-        android:text="Name"
+        android:text="@string/name"
         android:fontFamily="sans-serif"/>
 
     <TextView
@@ -25,23 +26,23 @@
         android:layout_width="0dp"
         android:layout_height="40dp"
         android:layout_columnWeight="1"
-        android:gravity="left"
+        android:gravity="start"
         android:layout_gravity="fill_horizontal"
         android:textSize="26sp"
         android:textColor="@android:color/background_light"
-        android:text="Facebook"
         android:fontFamily="sans-serif"/>
 
     <TextView
         android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
         android:layout_marginTop="@dimen/activity_vertical_margin"
         android:layout_width="0dp"
         android:layout_height="40dp"
         android:layout_columnWeight="1"
-        android:gravity="left"
+        android:gravity="start"
         android:layout_gravity="fill_horizontal"
         android:textSize="26sp"
-        android:text="High"
+        android:text="@string/high"
         android:fontFamily="sans-serif"/>
 
     <TextView
@@ -50,23 +51,23 @@
         android:layout_width="0dp"
         android:layout_height="40dp"
         android:layout_columnWeight="1"
-        android:gravity="left"
+        android:gravity="start"
         android:layout_gravity="fill_horizontal"
         android:textSize="26sp"
         android:textColor="@android:color/background_light"
-        android:text="623"
         android:fontFamily="sans-serif"/>
 
     <TextView
         android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
         android:layout_marginTop="@dimen/activity_vertical_margin"
         android:layout_width="0dp"
         android:layout_height="40dp"
         android:layout_columnWeight="1"
-        android:gravity="left"
+        android:gravity="start"
         android:layout_gravity="fill_horizontal"
         android:textSize="26sp"
-        android:text="Low"
+        android:text="@string/low"
         android:fontFamily="sans-serif"/>
 
     <TextView
@@ -75,23 +76,23 @@
         android:layout_width="0dp"
         android:layout_height="40dp"
         android:layout_columnWeight="1"
-        android:gravity="left"
+        android:gravity="start"
         android:layout_gravity="fill_horizontal"
         android:textColor="@android:color/background_light"
         android:textSize="26sp"
-        android:text="264"
         android:fontFamily="sans-serif"/>
 
     <TextView
         android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
         android:layout_width="0dp"
         android:layout_marginTop="@dimen/activity_vertical_margin"
         android:layout_height="40dp"
         android:layout_columnWeight="1"
-        android:gravity="left"
+        android:gravity="start"
         android:layout_gravity="fill_horizontal"
         android:textSize="26sp"
-        android:text="Open"
+        android:text="@string/open"
         android:fontFamily="sans-serif"/>
 
     <TextView
@@ -101,10 +102,9 @@
         android:layout_height="40dp"
         android:layout_columnWeight="1"
         android:textColor="@android:color/background_light"
-        android:gravity="left"
+        android:gravity="start"
         android:layout_gravity="fill_horizontal"
         android:textSize="26sp"
-        android:text="26%"
         android:fontFamily="sans-serif"/>
 
     <Space

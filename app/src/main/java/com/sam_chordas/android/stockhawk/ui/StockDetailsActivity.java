@@ -45,6 +45,8 @@ public class StockDetailsActivity extends AppCompatActivity {
 
         symbol = new Bundle();
         symbol.putString(getString(R.string.symbol_bundle),s);
+
+        getSupportActionBar().setTitle(s.toUpperCase());
     }
 
     private void setupViewPager(ViewPager viewPager) {

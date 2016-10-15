@@ -16,6 +16,11 @@
     <string name="error_stock_already_saved" translatable="true">This stock is already saved!</string>
     <string name="empty_message" translatable="true">No Data is Available</string>
 
+    <string name="name" translatable="true">Name</string>
+    <string name="high" translatable="true">High</string>
+    <string name="low" translatable="true">Low</string>
+    <string name="open" translatable="true">Open</string>
+
     <string name="symbol_label" translatable="false">symbol</string>
     <string name="symbol_bundle" translatable="false">symb</string>
 </resources>
